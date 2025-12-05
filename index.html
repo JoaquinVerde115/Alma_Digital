@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="antialiased">
     <header
@@ -23,21 +24,53 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img
-              src="image-removebg-preview__3_-removebg-preview.png"
+              src="imgs/image-removebg-preview__3_-removebg-preview.png"
               alt="Logo Alma Digital"
               class="h-[95px] w-auto"
             />
           </div>
-          <nav class="hidden md:flex items-center space-x-8">
-            <a href="#servicios" class="text-medium-blue">Servicios</a>
-            <a href="#nosotros" class="text-medium-blue">Nosotros</a>
-            <a href="#apoyo" class="text-medium-blue">Apoyo Emocional</a>
+          <nav class="hidden md:flex items-center space-x-6">
             <a
-              href="#contacto"
-              class="btn-primary font-bold py-2 px-5 rounded-full"
-              >Contacto</a
+              href="#servicios"
+              class="text-medium-blue hover:text-dark-blue font-medium transition"
+              >Servicios</a
             >
+            <a
+              href="#nosotros"
+              class="text-medium-blue hover:text-dark-blue font-medium transition"
+              >Nosotros</a
+            >
+            <a
+              href="#apoyo"
+              class="text-medium-blue hover:text-dark-blue font-medium transition"
+              >Apoyo</a
+            >
+
+            <a
+              href="#empresas"
+              class="text-soft-gold font-bold hover:text-dark-blue transition border border-soft-gold/30 px-3 py-1 rounded-full hover:bg-soft-gold"
+            >
+              Soy Empresa
+            </a>
+
+            <div
+              class="flex items-center gap-3 ml-2 border-l border-gray-300 pl-4"
+            >
+              <a
+                href="login.html"
+                class="text-dark-blue font-bold hover:text-soft-gold transition text-sm"
+              >
+                Iniciar Sesion
+              </a>
+              <a
+                href="login.html?mode=register"
+                class="btn-primary font-bold py-2 px-5 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 text-sm"
+              >
+                Crear Cuenta
+              </a>
+            </div>
           </nav>
+
           <button id="mobile-menu-button" class="md:hidden text-dark-blue">
             <svg
               class="w-6 h-6"
@@ -56,21 +89,50 @@
           </button>
         </div>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
-        <a href="#servicios" class="block text-dark-blue rounded-md p-2"
-          >Servicios</a
-        >
-        <a href="#nosotros" class="block text-dark-blue rounded-md p-2"
-          >Nosotros</a
-        >
-        <a href="#apoyo" class="block text-dark-blue rounded-md p-2"
-          >Apoyo Emocional</a
-        >
-        <a
-          href="#contacto"
-          class="block bg-soft-gold text-dark-blue font-bold text-center rounded-full mt-2 py-2"
-          >Contacto</a
-        >
+
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg z-40 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0"
+      >
+        <div class="px-6 py-6 space-y-4">
+          <a
+            href="#servicios"
+            class="block text-lg text-medium-blue hover:text-dark-blue font-medium transition pl-2 border-l-2 border-transparent hover:border-soft-gold"
+            >Servicios</a
+          >
+          <a
+            href="#nosotros"
+            class="block text-lg text-medium-blue hover:text-dark-blue font-medium transition pl-2 border-l-2 border-transparent hover:border-soft-gold"
+            >Nosotros</a
+          >
+          <a
+            href="#apoyo"
+            class="block text-lg text-medium-blue hover:text-dark-blue font-medium transition pl-2 border-l-2 border-transparent hover:border-soft-gold"
+            >Apoyo</a
+          >
+          <a
+            href="#empresas"
+            class="block text-lg text-soft-gold font-bold transition pl-2 border-l-2 border-transparent hover:border-dark-blue"
+          >
+            Soy Empresa / Funeraria
+          </a>
+          <div class="border-t border-gray-100 my-4"></div>
+
+          <div class="flex flex-col gap-3">
+            <a
+              href="login.html"
+              class="block text-center text-dark-blue font-bold border border-gray-200 rounded-xl py-3 hover:bg-gray-50 transition"
+            >
+              Iniciar Sesión
+            </a>
+            <a
+              href="login.html?mode=register"
+              class="block text-center bg-soft-gold text-dark-blue font-bold rounded-xl py-3 shadow-md hover:bg-gold-dark/20 transition"
+            >
+              Crear Cuenta
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -95,6 +157,500 @@
         </div>
       </section>
 
+      <section id="gestion-familiar" class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue">
+              Gestión Integral para el Familiar a Cargo
+            </h2>
+            <p class="text-medium-blue mt-2 max-w-2xl mx-auto">
+              Herramientas diseñadas para brindarle control, transparencia y
+              calma.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="service-card-white hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div class="icon text-rosy-brown">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+              </div>
+              <h3>Transparencia en Costos</h3>
+              <p>
+                Visualice cotizaciones claras y desglosadas. Compare precios sin
+                costos ocultos para tomar decisiones financieras seguras.
+              </p>
+            </div>
+
+            <div
+              class="service-card-white hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div class="icon text-rosy-brown">
+                <i class="fa-solid fa-file-signature"></i>
+              </div>
+              <h3>Trámites Centralizados</h3>
+              <p>
+                Gestione certificados y permisos legales desde la app. Registre
+                los datos del difunto una sola vez para todos los procesos.
+              </p>
+            </div>
+
+            <div
+              class="service-card-white hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div class="icon text-rosy-brown">
+                <i class="fa-regular fa-calendar-check"></i>
+              </div>
+              <h3>Agenda Inteligente</h3>
+              <p>
+                Coordine horarios de velatorio y entierro. Reciba alertas en
+                tiempo real sobre el estado de sus servicios contratados.
+              </p>
+            </div>
+
+            <div
+              class="service-card-white hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div class="icon text-rosy-brown">
+                <i class="fa-regular fa-comments"></i>
+              </div>
+              <h3>Chat Directo</h3>
+              <p>
+                Comunicación segura y directa con la funeraria para resolver
+                dudas urgentes sin necesidad de llamadas constantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-dark-blue text-white relative overflow-hidden">
+        <div
+          class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"
+        ></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Honrando la Memoria con Tecnología
+            </h2>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+              Creamos espacios eternos para sus seres queridos utilizando
+              innovación digital.
+            </p>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-center gap-8">
+            <div
+              class="memorial-card bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl md:w-1/3 text-center hover:bg-white/20 transition duration-300 group"
+            >
+              <div
+                class="text-5xl text-soft-gold mb-6 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-solid fa-laptop-medical"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-white">
+                Memorial Digital
+              </h3>
+              <p class="text-gray-300 mb-6">
+                Cree una biografía interactiva, suba fotos y videos, y comparta
+                el enlace con familiares lejanos para recibir condolencias
+                virtuales.
+              </p>
+            </div>
+
+            <div
+              class="memorial-card bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl md:w-1/3 text-center hover:bg-white/20 transition duration-300 relative overflow-hidden group"
+            >
+              <div
+                class="absolute top-0 right-0 bg-soft-gold text-dark-blue text-xs font-bold px-3 py-1 rounded-bl-lg"
+              >
+                NUEVO
+              </div>
+              <div
+                class="text-5xl text-soft-gold mb-6 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-solid fa-vr-cardboard"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-white">
+                Recuerdos en RA
+              </h3>
+              <p class="text-gray-300 mb-6">
+                Active la visualización de recuerdos en
+                <strong>Realidad Aumentada</strong> mediante códigos QR. Una
+                experiencia inmersiva para sentir a su ser querido más cerca.
+              </p>
+            </div>
+
+            <div
+              class="memorial-card bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl md:w-1/3 text-center hover:bg-white/20 transition duration-300 group"
+            >
+              <div
+                class="text-5xl text-soft-gold mb-6 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-white">
+                Transmisión en Vivo
+              </h3>
+              <p class="text-gray-300 mb-6">
+                Permita que familiares en el extranjero participen en la
+                ceremonia mediante streaming seguro, privado y de alta calidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="demo-familiar"
+        class="py-20 bg-white border-t border-gray-100"
+      >
+        <div class="container mx-auto px-6">
+          <div class="mb-12 text-center">
+            <span
+              class="text-rosy-brown font-bold tracking-wider uppercase text-sm"
+              >Plataforma de Gestión</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue mt-2">
+              Panel del Familiar a Cargo
+            </h2>
+            <p class="text-medium-blue mt-2 max-w-2xl mx-auto">
+              Herramientas técnicas para el control logístico y financiero.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-10">
+            <!-- TARJETA: COTIZADOR (Validando US05: Transparencia) -->
+            <!-- Escenarios: 1. Desglose, 2. Adicionales, 3. Seguros -->
+            <div class="ui-card">
+              <div class="ui-header">
+                <i class="ph ph-receipt text-rosy-brown text-2xl"></i>
+                <div>
+                  <h3 class="font-bold text-dark-blue">Cotizador Detallado</h3>
+                  <p class="text-xs text-gray-400">Cálculo en tiempo real</p>
+                </div>
+              </div>
+              <div
+                class="bg-gray-50 rounded p-4 text-sm border border-gray-200 font-inter"
+              >
+                <div class="flex justify-between py-2 border-b border-gray-200">
+                  <span>Servicio Cremación Base</span>
+                  <span class="font-bold text-dark-blue">S/ 3,500</span>
+                </div>
+                <div
+                  class="flex justify-between py-2 border-b border-gray-200 text-medium-blue bg-blue-50/50 px-2 rounded mt-1"
+                >
+                  <span>+ Flores Opcionales</span>
+                  <span>S/ 200</span>
+                </div>
+                <div
+                  class="flex justify-between py-2 border-b border-gray-200 text-green-600 bg-green-50/50 px-2 rounded mt-1"
+                >
+                  <span>- Cobertura Seguro RIMAC</span>
+                  <span>- S/ 2,000</span>
+                </div>
+                <div
+                  class="flex justify-between py-2 mt-2 bg-white px-2 rounded font-bold text-dark-blue shadow-sm border border-gray-100"
+                >
+                  <span>TOTAL A PAGAR</span>
+                  <span>S/ 1,700</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: TRÁMITES (Validando US08: Centralización) -->
+            <!-- Escenarios: 2. Error visible, 3. Barra de progreso -->
+            <div class="ui-card">
+              <div class="ui-header">
+                <i class="ph ph-file-text text-rosy-brown text-2xl"></i>
+                <div>
+                  <h3 class="font-bold text-dark-blue">
+                    Seguimiento de Trámites
+                  </h3>
+                  <p class="text-xs text-gray-400">Estado legal en vivo</p>
+                </div>
+              </div>
+              <div class="space-y-4 font-inter">
+                <!-- Item con Error -->
+                <div
+                  class="bg-red-50 p-3 rounded border border-red-100 flex gap-3 items-start"
+                >
+                  <i class="ph ph-warning text-red-500 text-xl mt-0.5"></i>
+                  <div>
+                    <h4 class="font-bold text-sm text-red-700">
+                      Permiso Cremación
+                    </h4>
+                    <p class="text-xs text-red-600">
+                      Error: Falta DNI del solicitante.
+                    </p>
+                    <button
+                      class="mt-2 text-[10px] bg-white border border-red-200 text-red-700 px-2 py-1 rounded font-bold shadow-sm"
+                    >
+                      Subir Documento
+                    </button>
+                  </div>
+                </div>
+                <!-- Barra de Progreso -->
+                <div>
+                  <div class="flex justify-between text-xs mb-1 text-dark-blue">
+                    <span>Progreso General</span>
+                    <span class="font-bold">50%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-soft-gold h-2 rounded-full"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: COMUNICACIÓN (Validando US10 Agenda y US12 Chat) -->
+            <!-- Escenarios: 3. Recordatorio, 3. Adjuntos -->
+            <div class="ui-card">
+              <div class="ui-header">
+                <i class="ph ph-chat-circle-text text-rosy-brown text-2xl"></i>
+                <div>
+                  <h3 class="font-bold text-dark-blue">Comunicación Directa</h3>
+                  <p class="text-xs text-gray-400">Chat con la Funeraria</p>
+                </div>
+              </div>
+              <div
+                class="bg-gray-100 p-3 rounded h-40 flex flex-col gap-2 overflow-y-auto text-xs border border-gray-200 font-inter"
+              >
+                <!-- Notificación Sistema -->
+                <div
+                  class="bg-yellow-50 text-yellow-800 p-2 rounded text-center border border-yellow-200 mb-2"
+                >
+                  <i class="ph ph-bell"></i>
+                  <strong>Recordatorio:</strong> Velatorio mañana 4:00 PM
+                </div>
+                <!-- Mensaje Usuario -->
+                <div
+                  class="self-end bg-dark-blue text-white p-2 rounded-lg rounded-tr-none max-w-[85%] shadow-sm"
+                >
+                  <div
+                    class="flex items-center gap-2 bg-white/10 p-1 rounded mb-1"
+                  >
+                    <i class="ph ph-paperclip"></i> <span>dni_frente.jpg</span>
+                  </div>
+                  <p>Envío el documento faltante.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: TECNOLOGÍA (Validando US14 Soporte y US16 RA) -->
+            <!-- Escenarios: 1. Conexión <5min, 2. Visualización RA -->
+            <div
+              class="ui-card bg-dark-blue text-white relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-soft-gold rounded-full opacity-10 blur-2xl -mr-10 -mt-10"
+              ></div>
+              <div class="ui-header border-white/10">
+                <i class="ph ph-heartbeat text-soft-gold text-2xl"></i>
+                <div>
+                  <h3 class="font-bold text-white">Soporte y Tecnología</h3>
+                  <p class="text-xs text-gray-400">SOS y Realidad Aumentada</p>
+                </div>
+              </div>
+              <!-- Simulación Llamada -->
+              <div
+                class="bg-white/10 rounded p-3 text-center mb-4 border border-white/10 backdrop-blur-sm"
+              >
+                <div
+                  class="inline-block p-2 rounded-full bg-green-500/20 text-green-400 mb-1 animate-pulse"
+                >
+                  <i class="ph ph-video-camera text-xl"></i>
+                </div>
+                <h4 class="font-bold text-sm">Conectando Psicólogo...</h4>
+                <p class="text-xs text-gray-300">
+                  Tiempo estimado: <strong>&lt; 5 min</strong>
+                </p>
+              </div>
+              <!-- Simulación RA -->
+              <div
+                class="flex justify-between items-center bg-white/5 p-3 rounded border border-white/10"
+              >
+                <div class="text-xs flex items-center gap-3">
+                  <i class="ph ph-goggles text-2xl text-soft-gold"></i>
+                  <div>
+                    <span class="font-bold text-soft-gold block"
+                      >Realidad Aumentada</span
+                    >
+                    <span class="text-gray-400">Ver altar 3D</span>
+                  </div>
+                </div>
+                <button
+                  class="bg-soft-gold text-dark-blue text-xs font-bold px-3 py-1 rounded hover:bg-white transition"
+                >
+                  Activar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: PANEL DE USUARIO PLANIFICADOR (Valida US07, US09, US01, US27) -->
+      <section
+        id="demo-usuario"
+        class="py-20 bg-off-white border-t border-gray-200"
+      >
+        <div class="container mx-auto px-6">
+          <div class="mb-12 text-center">
+            <span
+              class="text-soft-gold font-bold tracking-wider uppercase text-sm"
+              >Previsión y Seguridad</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue mt-2">
+              Panel del Usuario Planificador
+            </h2>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-8">
+            <!-- TARJETA: PLANES (Validando US07 Planificación) -->
+            <!-- Escenarios: 1. Guardar, 3. Alerta Precio -->
+            <div class="ui-card h-full flex flex-col">
+              <div class="ui-header">
+                <i class="ph ph-bookmark-simple text-rosy-brown text-2xl"></i>
+                <h3 class="font-bold text-dark-blue">Mis Planes a Futuro</h3>
+              </div>
+              <div class="flex-1 space-y-3 font-inter">
+                <div
+                  class="bg-white border-l-4 border-dark-blue p-3 rounded shadow-sm border border-gray-100"
+                >
+                  <div class="flex justify-between items-start">
+                    <h4 class="font-bold text-sm text-dark-blue">
+                      Plan Eternidad
+                    </h4>
+                    <span
+                      class="bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded font-bold"
+                      >GUARDADO</span
+                    >
+                  </div>
+                  <p class="text-xs text-gray-500 mt-1">Fecha: 12/10/2024</p>
+                </div>
+                <!-- Alerta Precio -->
+                <div
+                  class="bg-yellow-50 border border-yellow-200 p-2 rounded flex gap-2 items-start mt-auto"
+                >
+                  <i class="ph ph-warning text-yellow-600 text-lg"></i>
+                  <p class="text-xs text-yellow-800">
+                    <strong>Alerta:</strong> El precio base ha variado un 5%
+                    desde su última revisión.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: PAGOS (Validando US09 Pagos) -->
+            <!-- Escenarios: 2. Fraccionado, 4. Depósito -->
+            <div class="ui-card h-full flex flex-col">
+              <div class="ui-header">
+                <i class="ph ph-credit-card text-rosy-brown text-2xl"></i>
+                <h3 class="font-bold text-dark-blue">Pasarela de Pago</h3>
+              </div>
+              <div class="space-y-3 text-sm font-inter">
+                <p class="font-bold text-dark-blue text-xs">
+                  Seleccione Modalidad:
+                </p>
+
+                <div
+                  class="flex items-center gap-2 p-2 border-2 border-dark-blue bg-blue-50 rounded relative cursor-pointer"
+                >
+                  <div
+                    class="w-4 h-4 rounded-full border-4 border-dark-blue"
+                  ></div>
+                  <div>
+                    <span class="font-bold text-dark-blue block"
+                      >Fraccionado</span
+                    >
+                    <p class="text-xs text-gray-500">12 cuotas de S/ 291</p>
+                  </div>
+                  <i
+                    class="ph ph-check-circle text-dark-blue absolute right-2 top-2 text-xl"
+                  ></i>
+                </div>
+
+                <div
+                  class="flex items-center gap-2 p-2 border border-gray-200 rounded opacity-60"
+                >
+                  <div
+                    class="w-4 h-4 rounded-full border border-gray-400"
+                  ></div>
+                  <div>
+                    <span class="font-bold block">Depósito Inicial</span>
+                    <span class="text-xs">Reserva 10% (S/ 350)</span>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full bg-dark-blue text-white py-2 rounded font-bold text-xs mt-2 hover:bg-opacity-90 transition"
+                >
+                  Pagar Seguro
+                </button>
+              </div>
+            </div>
+
+            <!-- TARJETA: PRIVACIDAD (Validando US27 Privacidad y US01 Cuenta) -->
+            <!-- Escenarios: 1. Control Privacidad, 1. Login Social -->
+            <div class="ui-card h-full flex flex-col">
+              <div class="ui-header">
+                <i class="ph ph-shield-check text-rosy-brown text-2xl"></i>
+                <h3 class="font-bold text-dark-blue">Cuenta y Privacidad</h3>
+              </div>
+              <div class="space-y-4 font-inter">
+                <!-- Toggles -->
+                <div class="bg-gray-50 p-3 rounded border border-gray-200">
+                  <h4 class="text-xs font-bold text-medium-blue mb-2 uppercase">
+                    Visibilidad Memorial
+                  </h4>
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs text-gray-500">Público</span>
+                    <div class="w-8 h-4 bg-gray-300 rounded-full relative">
+                      <div
+                        class="w-4 h-4 bg-white rounded-full shadow absolute left-0"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-dark-blue"
+                      >Solo Familiares</span
+                    >
+                    <div class="w-8 h-4 bg-green-500 rounded-full relative">
+                      <div
+                        class="w-4 h-4 bg-white rounded-full shadow absolute right-0"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Login Social -->
+                <div class="pt-2 border-t border-gray-100">
+                  <p class="text-xs text-gray-400 mb-2">Vinculación Rápida</p>
+                  <div class="flex gap-2">
+                    <button
+                      class="flex-1 py-1 border border-gray-300 rounded flex justify-center items-center gap-1 text-xs hover:bg-gray-50 text-dark-blue"
+                    >
+                      <i class="ph ph-google-logo text-lg text-red-500"></i>
+                      Google
+                    </button>
+                    <button
+                      class="flex-1 py-1 border border-gray-300 rounded flex justify-center items-center gap-1 text-xs hover:bg-gray-50 text-dark-blue"
+                    >
+                      <i class="ph ph-facebook-logo text-lg text-blue-600"></i>
+                      FB
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="servicios" class="py-20">
         <div class="container mx-auto px-6">
           <div class="text-center mb-12">
@@ -147,7 +703,11 @@
         <div class="container mx-auto px-6">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 flex justify-center">
-              <img src="persona 1.png" alt="mujer app" class="imagen-redonda" />
+              <img
+                src="imgs/persona 1.png"
+                alt="mujer app"
+                class="imagen-redonda"
+              />
             </div>
             <div class="md:w-1/2">
               <h2 class="text-3xl md:text-4xl font-bold text-dark-blue mb-4">
@@ -165,6 +725,45 @@
                 permita a nuestros clientes enfocarse en lo más importante:
                 despedir a sus seres queridos y comenzar su proceso de sanación.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="py-20 bg-off-white/50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue">
+              Historias de Vida y Confianza
+            </h2>
+            <p class="text-dark-blue mt-2 max-w-2xl mx-auto">
+              La experiencia de quienes han encontrado paz en Alma Digital.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="service-card-white">
+              <p class="italic text-medium-blue mb-4">
+                “Gracias a Alma Digital pude encontrar consuelo cuando más lo
+                necesitaba. Fue un espacio que me permitió despedirme con calma
+                y sentirme acompañada en cada paso.”
+              </p>
+              <p class="font-bold text-dark-blue">- Usuario Verificado, Lima</p>
+            </div>
+            <div class="service-card-white">
+              <p class="italic text-medium-blue mb-4">
+                “La transparencia en los costos fue un alivio. Nos ayudó a
+                enfocarnos en la despedida y no en la ansiedad financiera. Un
+                servicio humano y eficiente.”
+              </p>
+              <p class="font-bold text-dark-blue">- David Saurin, SJL</p>
+            </div>
+            <div class="service-card-white">
+              <p class="italic text-medium-blue mb-4">
+                “El diseño es intuitivo y la navegación clara. Es una solución
+                práctica que centraliza todo lo que se necesita en un momento
+                tan difícil.”
+              </p>
+              <p class="font-bold text-dark-blue">- Santiago Pascual, SJL</p>
             </div>
           </div>
         </div>
@@ -206,10 +805,256 @@
         </div>
       </section>
 
+      <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold text-dark-blue">
+                Recursos de Apoyo
+              </h2>
+              <p class="text-medium-blue mt-2">
+                Artículos y guías escritas por especialistas en duelo.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="hidden md:inline-block text-soft-gold font-bold hover:text-dark-blue transition"
+              >Ver todos los artículos →</a
+            >
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <article
+              class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer"
+            >
+              <div class="h-48 bg-gray-200 relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80"
+                  alt="Duelo"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs font-bold text-soft-gold uppercase tracking-wider"
+                  >Guía</span
+                >
+                <h3 class="text-xl font-bold text-dark-blue mt-2 mb-3">
+                  Cómo afrontar los primeros días
+                </h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Consejos prácticos para manejar el shock inicial y la
+                  organización logística.
+                </p>
+                <span
+                  class="text-dark-blue font-semibold text-sm group-hover:text-soft-gold transition"
+                  >Leer más</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer"
+            >
+              <div class="h-48 bg-gray-200 relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80"
+                  alt="Familia"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs font-bold text-soft-gold uppercase tracking-wider"
+                  >Psicología</span
+                >
+                <h3 class="text-xl font-bold text-dark-blue mt-2 mb-3">
+                  El duelo en los niños
+                </h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Herramientas para explicar la pérdida a los más pequeños de la
+                  casa.
+                </p>
+                <span
+                  class="text-dark-blue font-semibold text-sm group-hover:text-soft-gold transition"
+                  >Leer más</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer"
+            >
+              <div class="h-48 bg-gray-200 relative overflow-hidden">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1661371768352-86a1d1b75902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGRvY3VtZW50b3N8ZW58MHx8MHx8fDA%3D"
+                  alt="Papeles"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs font-bold text-soft-gold uppercase tracking-wider"
+                  >Trámites</span
+                >
+                <h3 class="text-xl font-bold text-dark-blue mt-2 mb-3">
+                  Documentación esencial en Perú
+                </h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lista de verificación de los documentos legales que
+                  necesitarás.
+                </p>
+                <span
+                  class="text-dark-blue font-semibold text-sm group-hover:text-soft-gold transition"
+                  >Leer más</span
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-8 text-center md:hidden">
+            <a
+              href="#"
+              class="text-soft-gold font-bold hover:text-dark-blue transition"
+              >Ver todos los artículos →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-soft-gold/20">
+        <div class="container mx-auto px-6 text-center">
+          <h3 class="text-2xl md:text-3xl font-bold text-dark-blue mb-4">
+            Planifica con tranquilidad
+          </h3>
+          <p class="text-medium-blue mb-8 max-w-xl mx-auto">
+            Recibe nuestra guía gratuita sobre "Planificación Anticipada" y
+            reduce la incertidumbre futura para tu familia.
+          </p>
+
+          <form
+            id="newsletter-form"
+            class="max-w-md mx-auto flex flex-col sm:flex-row gap-4"
+          >
+            <input
+              type="email"
+              id="newsletter-email"
+              placeholder="Tu correo electrónico"
+              class="flex-1 px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-dark-blue"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-dark-blue text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition"
+            >
+              Suscribirme
+            </button>
+          </form>
+
+          <p
+            id="newsletter-message"
+            class="mt-4 text-center font-semibold text-sm"
+          ></p>
+        </div>
+      </section>
+
+      <section id="faq" class="py-20 bg-off-white relative">
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/50 to-transparent pointer-events-none"
+        ></div>
+
+        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue">
+              Preguntas Frecuentes
+            </h2>
+            <div class="w-24 h-1 bg-soft-gold mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="faq-item border border-soft-gold/50 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            >
+              <button
+                class="faq-question w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-dark-blue text-lg"
+                  >¿Cómo funciona el servicio de planificación funeraria?</span
+                >
+                <span
+                  class="icon-plus text-soft-gold text-3xl font-light leading-none"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <p class="px-6 pb-6 text-medium-blue leading-relaxed">
+                  Nos encargamos de coordinar todos los aspectos logísticos,
+                  desde el traslado y velación hasta el sepelio o cremación,
+                  respetando siempre sus deseos y tradiciones familiares.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border border-soft-gold/50 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            >
+              <button
+                class="faq-question w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-dark-blue text-lg"
+                  >¿El apoyo psicológico está incluido?</span
+                >
+                <span
+                  class="icon-plus text-soft-gold text-3xl font-light leading-none"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <p class="px-6 pb-6 text-medium-blue leading-relaxed">
+                  Sí, ofrecemos acceso inmediato a nuestra red de profesionales
+                  para brindar contención emocional durante las primeras etapas
+                  del duelo como parte integral de nuestro servicio.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border border-soft-gold/50 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            >
+              <button
+                class="faq-question w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-dark-blue text-lg"
+                  >¿Puedo crear un memorial digital sin contratar otros
+                  servicios?</span
+                >
+                <span
+                  class="icon-plus text-soft-gold text-3xl font-light leading-none"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <p class="px-6 pb-6 text-medium-blue leading-relaxed">
+                  Por supuesto. Nuestra plataforma permite crear memoriales
+                  digitales independientes para honrar la memoria de su ser
+                  querido y compartir recuerdos con familiares y amigos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contacto" class="py-20 contacto-section-bg">
         <div class="absolute inset-0 z-0">
           <img
-            src="S13-4994D_preset_mol-mx-tile-wide-sv-new.webp"
+            src="imgs/S13-4994D_preset_mol-mx-tile-wide-sv-new.webp"
             alt="Flores de fondo"
             class="w-full h-full object-cover opacity-20"
           />
@@ -225,35 +1070,40 @@
               Estamos disponibles 24/7 para atenderle. Envíenos un mensaje o
               llámenos directamente.
             </p>
-            <form>
+
+            <form id="contact-form">
               <div class="mb-6 text-left">
                 <label
-                  for="name"
+                  for="user_name"
                   class="block text-dark-blue font-semibold mb-2"
                   >Nombre Completo</label
                 >
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  name="user_name"
+                  id="user_name"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-gold"
+                  placeholder="Ej. Juan Pérez"
                   required
                 />
               </div>
+
               <div class="mb-6 text-left">
                 <label
-                  for="email"
+                  for="user_email"
                   class="block text-dark-blue font-semibold mb-2"
                   >Correo Electrónico</label
                 >
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  name="user_email"
+                  id="user_email"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-gold"
+                  placeholder="juan@ejemplo.com"
                   required
                 />
               </div>
+
               <div class="mb-6 text-left">
                 <label
                   for="message"
@@ -261,70 +1111,195 @@
                   >Mensaje</label
                 >
                 <textarea
-                  id="message"
                   name="message"
+                  id="message"
                   rows="5"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-gold"
+                  placeholder="Escribe tu consulta aquí..."
                   required
                 ></textarea>
               </div>
+
               <div class="text-center">
                 <button
                   type="submit"
-                  class="btn-primary font-bold text-lg py-3 px-12 rounded-full w-full md:w-auto"
+                  id="submit-button"
+                  class="btn-primary font-bold text-lg py-3 px-12 rounded-full w-full md:w-auto hover:shadow-lg transition transform hover:-translate-y-1"
                 >
                   Enviar Mensaje
                 </button>
               </div>
+
+              <p
+                id="form-message"
+                class="mt-4 text-center font-semibold text-sm"
+              ></p>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="empresas"
+        class="py-20 bg-dark-blue text-white relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-soft-gold/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"
+        ></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-12"
+          >
+            <div class="md:w-1/2">
+              <span
+                class="text-soft-gold font-bold tracking-wider uppercase text-sm"
+                >Para Empresas</span
+              >
+              <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">
+                ¿Tienes una funeraria? Digitaliza tus servicios con Alma
+              </h2>
+              <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                Únete a la red de proveedores verificados más confiable.
+                Gestiona tus catálogos, recibe pagos seguros y conecta con
+                familias que necesitan tu ayuda, todo desde una plataforma
+                profesional.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="afiliacion.html"
+                  class="bg-soft-gold text-dark-blue font-bold py-3 px-8 rounded-full text-center hover:bg-white transition transform hover:-translate-y-1"
+                >
+                  Afiliar mi Funeraria
+                </a>
+                <a
+                  href="beneficios.html"
+                  class="border border-white text-white font-bold py-3 px-8 rounded-full text-center hover:bg-white/10 transition"
+                >
+                  Ver Beneficios
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="md:w-5/12 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl"
+                >
+                  📈
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Crecimiento Digital</h4>
+                  <p class="text-sm text-gray-400">Alcance a nuevas familias</p>
+                </div>
+              </div>
+              <ul class="space-y-4 text-gray-300">
+                <li class="flex items-center gap-3">
+                  <span class="text-green-400">✓</span> Panel de administración
+                  de pedidos
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-green-400">✓</span> Catálogo digital
+                  autogestionable
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-green-400">✓</span> Pagos directos y seguros
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer-bg-new py-12">
+    <button
+      id="scroll-top-button"
+      class="fixed bottom-28 right-10 z-30 bg-soft-gold text-dark-blue w-12 h-12 rounded-full shadow-xl hover:bg-white hover:text-dark-blue transition-all duration-500 transform translate-y-20 opacity-0 invisible group border border-dark-blue/10 flex items-center justify-center"
+      aria-label="Volver arriba"
+    >
+      <i
+        class="ph ph-arrow-up text-xl font-bold group-hover:-translate-y-1 transition-transform duration-300"
+      ></i>
+    </button>
+
+    <footer class="footer-bg-new py-12 bg-dark-blue/90 text-off-white">
       <div class="container mx-auto px-6 text-center">
         <img
-          src="image-removebg-preview__3_-removebg-preview.png"
+          src="imgs/image-removebg-preview__3_-removebg-preview.png"
           alt="Logo Alma Digital en negativo"
-          class="h-[175px] w-auto mx-auto mb-4"
+          class="h-[120px] w-auto mx-auto mb-6 opacity-90"
         />
-        <p class="mb-4">Brindando paz en los momentos más difíciles.</p>
-        <div class="flex justify-center space-x-6 mb-6">
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">LinkedIn</a>
+        <p class="mb-6 text-gray-300 max-w-md mx-auto">
+          Brindando paz, transparencia y acompañamiento en los momentos que más
+          importan.
+        </p>
+
+        <div class="flex justify-center space-x-8 mb-8">
+          <a
+            href="#"
+            class="hover:text-soft-gold transition transform hover:scale-110"
+            >Instagram</a
+          >
+          <a
+            href="#"
+            class="hover:text-soft-gold transition transform hover:scale-110"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="hover:text-soft-gold transition transform hover:scale-110"
+            >LinkedIn</a
+          >
         </div>
-        <p class="text-sm text-gray-400">
+
+        <div class="border-t border-gray-600/50 my-8 w-1/2 mx-auto"></div>
+
+        <div
+          class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 text-sm text-gray-400 mb-4"
+        >
+          <a href="#" class="hover:text-white transition"
+            >Política de Privacidad</a
+          >
+          <a href="#" class="hover:text-white transition"
+            >Términos y Condiciones</a
+          >
+          <a href="#" class="hover:text-white transition"
+            >Libro de Reclamaciones</a
+          >
+        </div>
+
+        <p class="text-xs text-gray-500">
           &copy; 2025 Alma Digital. Todos los derechos reservados.
         </p>
       </div>
     </footer>
 
-    <script>
-      // Script para el menú móvil
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
+    <a
+      href="https://wa.me/51980090031"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Contactar por WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
 
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          if (!mobileMenu.classList.contains("hidden")) {
-            mobileMenu.classList.add("hidden");
-          }
-          const targetElement = document.querySelector(
-            this.getAttribute("href")
-          );
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: "smooth",
-            });
-          }
-        });
-      });
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        // IMPORTANTE: Reemplaza "TU_PUBLIC_KEY" por la clave que te da EmailJS en "Account > API Keys"
+        emailjs.init("Nm4skVcghDxTfcfxF");
+      })();
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>

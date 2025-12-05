@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificación Proveedor - Alma Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-off-white min-h-screen flex items-center justify-center p-4">
+    <div
+      class="bg-white w-full max-w-lg rounded-3xl shadow-xl p-8 border border-gray-100"
+    >
+      <div class="text-center mb-8">
+        <h2
+          class="text-xl font-serif text-rosy-brown uppercase tracking-widest mb-4"
+        >
+          VERIFICA TU CUENTA DE PROVEEDOR
+        </h2>
+        <p class="text-gray-400 text-sm italic leading-relaxed">
+          Para garantizar la autenticidad de los servicios, necesitamos
+          confirmar que perteneces a una funeraria registrada
+        </p>
+      </div>
+
+      <form
+        onsubmit="event.preventDefault(); window.location.href='dashboard-proveedor.html';"
+        class="space-y-5"
+      >
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1 ml-1"
+            >Nombre de la empresa</label
+          >
+          <input
+            type="text"
+            value=" "
+            class="w-full px-4 py-3 rounded-lg bg-medium-blue/10 border-none text-dark-blue font-medium focus:ring-2 focus:ring-dark-blue"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1 ml-1"
+            >RUC o número de registro</label
+          >
+          <input
+            type="text"
+            value=" "
+            class="w-full px-4 py-3 rounded-lg bg-medium-blue/10 border-none text-dark-blue font-medium focus:ring-2 focus:ring-dark-blue"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1 ml-1"
+            >Correo corporativo</label
+          >
+          <input
+            type="email"
+            value=" "
+            class="w-full px-4 py-3 rounded-lg bg-medium-blue/10 border-none text-dark-blue font-medium focus:ring-2 focus:ring-dark-blue"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1 ml-1"
+            >Documento de representante (DNI)</label
+          >
+          <input
+            type="text"
+            value=" "
+            class="w-full px-4 py-3 rounded-lg bg-medium-blue/10 border-none text-dark-blue font-medium focus:ring-2 focus:ring-dark-blue"
+          />
+        </div>
+
+        <div
+          class="flex items-center gap-2 text-medium-blue cursor-pointer hover:text-dark-blue transition pt-2"
+        >
+          <span class="text-sm font-medium">Adjuntar archivo</span>
+          <span
+            class="bg-medium-blue/20 rounded-full w-6 h-6 flex items-center justify-center text-lg"
+            >+</span
+          >
+        </div>
+
+        <div class="pt-6">
+          <button
+            type="submit"
+            class="w-full bg-dark-blue text-white font-bold py-4 rounded-xl shadow-lg hover:bg-opacity-90 transition"
+          >
+            Enviar para verificación
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const form = document.querySelector("form");
+      form.onsubmit = function (e) {
+        e.preventDefault();
+        // Simulamos que la solicitud se envió y fue aprobada
+        alert("Solicitud enviada. Redirigiendo a tu panel...");
+        window.location.href = "dashboard-proveedor.html";
+      };
+    </script>
+  </body>
+</html>

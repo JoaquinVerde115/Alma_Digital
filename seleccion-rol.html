@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecciona tu Rol - Alma Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-off-white min-h-screen flex flex-col items-center justify-center p-4 relative"
+  >
+    <div class="absolute inset-0 z-0 bg-dark-blue overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-[800px] h-[800px] bg-soft-gold/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"
+      ></div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-5xl text-center">
+      <img
+        src="imgs/image-removebg-preview__3_-removebg-preview.png"
+        alt="Logo"
+        class="h-25 mx-auto mb-8 opacity-90 brightness-0 invert"
+      />
+
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        ¿Cómo deseas ingresar hoy?
+      </h1>
+      <p class="text-gray-300 mb-12 text-lg">
+        Selecciona el perfil que se ajusta a tus necesidades.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <a
+          href="verificacion-proveedor.html"
+          class="group bg-white rounded-3xl p-10 shadow-2xl hover:shadow-soft-gold/50 transition-all duration-300 transform hover:-translate-y-2 border-4 border-transparent hover:border-soft-gold cursor-pointer text-left relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 bg-soft-gold text-dark-blue text-xs font-bold px-4 py-2 rounded-bl-xl"
+          >
+            EMPRESAS
+          </div>
+          <div
+            class="w-16 h-16 bg-dark-blue rounded-2xl flex items-center justify-center text-3xl mb-6 text-white group-hover:bg-soft-gold group-hover:text-dark-blue transition-colors"
+          >
+            💼
+          </div>
+          <h3 class="text-2xl font-bold text-dark-blue mb-2">Soy Proveedor</h3>
+          <p class="text-gray-500 mb-6">
+            Gestiona tu funeraria, catálogos, pedidos y conecta con clientes
+            potenciales.
+          </p>
+          <span
+            class="text-dark-blue font-bold group-hover:text-soft-gold flex items-center gap-2"
+          >
+            Acceder al Panel <span class="text-xl">→</span>
+          </span>
+        </a>
+
+        <a
+          href="index.html"
+          class="group bg-white/10 backdrop-blur-lg rounded-3xl p-10 shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer text-left"
+        >
+          <div
+            class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-3xl mb-6 text-white"
+          >
+            👤
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Soy Cliente</h3>
+          <p class="text-gray-300 mb-6">
+            Busca servicios, compara precios y encuentra apoyo emocional para ti
+            y tu familia.
+          </p>
+          <span
+            class="text-white font-bold flex items-center gap-2 group-hover:gap-4 transition-all"
+          >
+            Buscar Servicios <span class="text-xl">→</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
